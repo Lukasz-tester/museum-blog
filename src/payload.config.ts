@@ -63,6 +63,26 @@ export default buildConfig({
     url: process.env.DATABASE_URI || '',
   }),
   collections: [Pages, Posts, Media, Categories, Users],
+  localization: {
+    locales: [
+      {
+        label: {
+          en: 'English',
+          pl: 'Angielski'
+        },
+        code: 'en',
+      },
+      {
+        label:  {
+          en: 'Polish',
+          pl: 'Polski'
+        },
+        code: 'pl',
+      },
+    ],
+    defaultLocale: 'en', // required
+    fallback: true, // defaults to true
+  },
   cors: [getServerSideURL()].filter(Boolean),
   globals: [Header, Footer],
   plugins: [
