@@ -68,14 +68,24 @@ export default buildConfig({
       {
         label: {
           en: 'English',
-          pl: 'Angielski'
+          pl: 'Angielski',
+          es: 'Inglese',
         },
         code: 'en',
       },
       {
+        label: {
+          en: 'Spanish',
+          pl: 'Hiszpański',
+          es: 'Espa(n)ol',
+        },
+        code: 'es',
+      },
+      {
         label:  {
           en: 'Polish',
-          pl: 'Polski'
+          pl: 'Polski',
+          es: 'Polaco',
         },
         code: 'pl',
       },
